@@ -47,9 +47,12 @@ h1 { font-family: var(--font-heading); font-size: 3.2rem; line-height: 1.15; mar
 .btn:hover { background: #877499; }
 
 .aku img {
+  flex: 0 0 360px;
   height: 305px;
   width: 243xpx;
   border-radius: 5%;
+  object-fit: cover;
+  display: block;
 }
 
 .section-title {
@@ -90,6 +93,12 @@ h3 { font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 8px; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
   h1 { font-size: 2.6rem; }
+  .aku img {
+    flex: none;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 1 / 1;}
 }
 
 @media (max-width: 600px) {
